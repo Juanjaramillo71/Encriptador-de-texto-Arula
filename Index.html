@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenger Alura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class = "header">
+        <section class="logo">
+        <img src="img/Logo.png" alt="Logo Challenger Encriptador"> 
+        <h1>Encriptador de texto <span>Alura Latam </span> </h1> 
+        </section>     
+    </header>
+
+    <main class="campo">
+        <section class="caja__texto">
+            <div>
+            <textarea id="textoEncriptar" class="container__input" placeholder="Ingrese el texto aquí"></textarea>
+
+            </div>
+
+            <div class="container__botones">
+
+                <button onclick="encriptarTexto();" class = "container__boton__encriptar">Encriptar</button>
+                <button onclick="desencriptarTexto();"class = "container__boton__desencriptar" >Desencriptar</button>             
+            </div>
+        </section>           
+        <section class="texto__presentacion">
+
+            <div class = "contenedor__presentacion">
+                <textarea id="cajaTexto" rows="50" cols="50" readonly></textarea>                              
+
+                    <div class="superpuesto" id="encontrado" style="visibility: visible;">
+                        <img src="img/Muñeco.png" alt="Imagen Challenger" class="propiedadesImagen">
+                        <h1>Ningún mensaje fue encontrado.</h1>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        <button onclick="copiarTexto();" class = "container__boton__copiar" id="activar" style="visibility: hidden;"> Copiar</button> 
+
+                    </div>  
+                    
+                </div>                      
+
+    
+        </section>       
+    </main>
+    <footer class = "footer">
+        <p1>Desarrollado por Juan Jaramillo</p1>
+        
+    </footer>
+    <script src="app.js"></script>
+
+</body>
+</html>
+
